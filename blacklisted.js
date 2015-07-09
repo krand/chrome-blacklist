@@ -19,7 +19,7 @@ function show(site,type) {
     }else if(unlistedTime){
       btn.attr("disabled", true);
       var time = 15 * 60 * 1000 + unlistedTime - new Date().getTime();
-      btn.html("The site will be available in " + Math.floor(time/60000) + ":" + Math.floor(time%60000/1000) );
+      btn.html("The site will be available in " + toTimeString(time) );
     }
   });
 

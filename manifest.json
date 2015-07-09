@@ -9,14 +9,14 @@
     "default_icon": "img/ic_block_32px.png"
   },
   "background": {
-    "scripts": ["js/jquery-2.1.4.min.js","utils.js","eventpage.js"],
+    "scripts": ["js/jquery.min.js","utils.js","eventpage.js"],
     "persistent": false
   },
   "content_scripts": [
     {
       "matches": ["http://*/*","https://*/*"],
       "run_at": "document_start",
-      "js": ["js/jquery-2.1.4.min.js","utils.js","contentscript.js"]
+      "js": ["js/jquery.min.js","utils.js","contentscript.js"]
     }
   ],
 
